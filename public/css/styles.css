@@ -1,4 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  background: steelblue;
-  color: white;
+  /* color: steelblue; */
+  color: black;
+  background-color: white;
 }

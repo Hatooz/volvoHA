@@ -1,11 +1,11 @@
-import { HelloWorld } from "../src/components/HelloWorld";
-import "../public/css/styles.css";
+import { AppProps } from "next/app";
 import React from "react";
+import "../public/css/styles.css";
 
-function HomePage() {
+function HomePage({ Component, pageProps }: AppProps) {
   return (
     <React.StrictMode>
-      <HelloWorld />
+      <Component {...pageProps} />
     </React.StrictMode>
   );
 }
